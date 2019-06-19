@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      h2 {
+        color : #eb4a4a;
+        font-family : cursive;
+        font-size : 34px;
+      }
+      h1 {
+        color : rgb(255, 255, 255);
+        background : #b22953;
+        text-align: center;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+      }
+      #DNS {
+        color : rgb(255, 7, 7);
+      }
+      .toc {
+        color : rgb(245, 196, 196);
+        line-height : 35px;
+        font-family: serif;
+        font-size: 20px;
+      }
+      body {
+        background : #002780;
+      }
+      ul {
+        color: #ffffff;
+        line-height: 35px;
+      }
+      p {
+        color : white
+      }
+      a {
+        color : red
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Kavach Research</h1>
+    <h2>Table of Contents:</h2>
+      <ol>
+        <li class = "toc"><a href = #HTTP class = "toc">HTTP</a></li>
+        <li class = "toc"><a href = #DNS class = "toc">Domain Name System</a></li>
+        <li class = "toc"><a href = #Micro_Services class = "toc">Micro Services</a></li>
+        <li class = "toc"><a href = #API class = "toc">API's</a></li>
+        <li class = "toc"><a href = #JAVA_SCRIPT class = "toc">Javascript</a></li>
+      </ol> 
+    <h2 id = "HTTP">HTTP - (HyperText Transfer Protocol)</h2>
+    <ul>
+      <li>Defines what actions web browsers/sites should take in response to command</li>
+      <br>
+      <li><strong>Stateless protocol</strong></li>
+      <ul><li>Doesn't remember last command</li></ul>
+      <ul><li>Therefore, each command is independent</li></ul>
+      <br>
+      <li><strong>Connectionless protocol</strong></li>
+      <ul><li>When client sends request to server, server disconnects from client</li></ul>
+      <ul><li>When server has the necessary info, it connects back to client</li></ul>
+    </ul>
+    <img class = "center" src =        https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Internet1.svg/2000px-Internet1.svg.png>
+    <h2 id = "DNS">Domain Name System (DNS)</h2>
+      <ul>
+        <li>Allows for obtainment of IP address for certain domain</li>
+        <br>
+        <li><strong>Process</strong></li>
+        <br>
+        <ol>
+          <li>Type in domain (ex: https://google.com.)</li>
+          <br>
+          <li>If IP address not stored in cache, browser goes to <i id = "DNS">IPS</i></li>
+          <br>
+          <li>If IPS doesn't have the domain-IP association stored, browser goes to <i>Root Name Server</i> </li>
+          <br>
+          <li>Root Name Server refers browser to specific <i id = "DNS">TLD</i></li>
+          <ul><li>TLD groups  are based on .com, .org., etc</li> <br>
+          </ul>
+          <li>TLD refers to a certain <i id = "DNS">Authoritative Name Server</i></li>
+          <ul><li>These servers contain DNS records, one of which pairs the entered Domain to the needed IP address</li></ul>
+          <ul><li>Broswer requests and obtains this address from ANS</li></ul>
+        </ol>
+      </ul>
+    <h2 id = "Micro_Services">Micro Services</h2>
+      <img class = "center" src = "https://mherman.org/presentations/microservices-flask-docker/images/microservices.png" width = 500>
+      <ul>
+          <li>way of breaking applications into many smaller applications that can be run on different hardware/server instances </li> <br>
+          <li>All work together to provide functionality of entire application</li> <br>
+          <li><strong>Advantages</strong></li>
+            <ul>
+              <li>Don't have to export entire application to check only one "micro" application's functionality</li>
+              <li>If a specific "micro" application's service is needed more than the others, only that one can be made more available </li>
+              <li>Can use different language for each "micro" application</li>
+            </ul> <br>
+        <li> <i>Monolithic Architecture</i></li>
+            <ul>
+              <li>Have only one application</li>
+              <li><strong>Disadvantages</strong></li>
+                <ul>
+                  <li>Difficult to deploy big applications</li>
+                  <li>When only one part of application is needed more, availability of entire application has to be increased</li>
+                    <ul> 
+                      <li>Instances of lots of unneccessary apps therefore increased</li>
+                    </ul>
+                </ul>
+            </ul>
+      </ul>
+    <h2 id = "API">API's : Application Programming Interface</h2>
+      <ul> 
+        <li>Basic Definition: Allows for communication with a software component</li>
+        <li>Application</li>
+          <ul><li>Allows for developers to increase functionality of their applications</li>
+        <li>Instead of having to code in the functionality, can just access it from other source using API's</li></ul>
+      </ul>
+    <h2 id = "JAVA_SCRIPT">JAVA SCRIPT</h2>
+    <p>To learn more, go to <a href = "https://www.w3schools.com/js/">w3schools.com</a></p>
+  </body>
+</html>
